@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const cors =require('cors');
 const connect = require('./connectToDatabase');
 const User = require('./schema');
-
-
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 const app = express();
 
 app.use(express.json());
