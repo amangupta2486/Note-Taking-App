@@ -1,7 +1,7 @@
 const fetchNotes = async() =>{
     const response = await axios({
         method: 'GET',
-        url: 'http://localhost:3000/',
+        url: 'https://aman-gutpa-note-taking-app.herokuapp.com',
     });
 
     const notesList = response.data;

@@ -3,7 +3,7 @@ const createNotes = async () =>{
     const authorText = document.getElementById('author-text').value;
 
     const response = await axios({
-        url:"http://localhost:3000/",
+        url:"https://aman-gutpa-note-taking-app.herokuapp.com",
         method:"POST",
         data:{
             notes:notesText,
